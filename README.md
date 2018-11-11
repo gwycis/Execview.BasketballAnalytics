@@ -4,26 +4,27 @@ Notes:
 1. Sample report has inconsistant formatting, for example:
 	a) indentation sometimes is 7 spaces and sometimes is 8
 	b) standard JSON object curly brace starts on a new line, rather than right after opening an array.
-```json 
-    {
-		  "Players": [
-			{
-			  "Id": 4,
-			  "Position": "SG",
-			}
-		  ]
-		}
-```
+```javascript 
+{
+   "Players": [
+ 	{
+ 	  "Id": 4,
+ 	  "Position": "SG",
+ 	}
+   ]
+ }
+```		
 
-		NOT like this (as this requires to build custom JSON serialiser)
-```json
-    {
-		  "Players": [{
-			  "Id": 4,
-			  "Position": "SG",
-			}
-		  ]
-		}
+NOT like this (as this requires to build custom JSON serialiser)
+
+```javascript
+{
+  "Players": [{
+	  "Id": 4,
+	  "Position": "SG",
+	}
+  ]
+}
 ```
 
 2. Armstrong, B.J. in the report the last dot is missing => Armstrong, B.J I don't think this is part of the task, it must be a mistake in sample output.
